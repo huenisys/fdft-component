@@ -104,8 +104,8 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    fetchWorkouts(context) {
-      return fetch("/assets/data/workouts.json")
+    fetchWorkouts(context, resourceUrl) {
+      return fetch(resourceUrl ? resourceUrl : "/assets/data/workouts.json")
         .then(response => response.json())
         .then(jsonArr => jsonArr.map(wo => normalizeWorkout(wo)))
         .then(collection => {

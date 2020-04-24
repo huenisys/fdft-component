@@ -39,7 +39,7 @@ export default {
   props: {
     resourceUrl: {
       type: String,
-      default: "assets/data/workouts.json"
+      default: "https://fdft-component.huenits.com/assets/data/workouts.json"
     }
   },
 
@@ -52,7 +52,7 @@ export default {
   },
 
   mounted() {
-    this.fetchWorkouts()
+    this.fetchWorkouts(this.$props.resourceUrl)
       .then(() => console.log("Fetch success: workouts"))
       .catch(err => console.error("Fetch workouts failure: " + err.message));
   }
