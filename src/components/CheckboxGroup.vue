@@ -6,9 +6,9 @@
       :key="choice"
       v-show="!choiceHasComma(choice)"
     >
-      <div class="form-check small">
+      <div class="form-check">
         <input
-          class="form-check-input"
+          class="form-check-input small"
           type="checkbox"
           :id="choice"
           :value="choice"
@@ -16,7 +16,7 @@
           v-on:change="modelChanged([filter.attr, model[filter.attr]])"
         />
         <label
-          class="form-check-label"
+          class="form-check-label text-muted"
           :for="choice"
           v-text="choiceTextNoCountIfZero([filter.attr, choice])"
         ></label>
