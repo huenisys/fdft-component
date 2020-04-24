@@ -2,4 +2,4 @@
 
 ## Build web component
 
-- $ ``npx vue-cli-service build --target wc --inline-vue  --name example-component main.js``
+- $ ``npx vue-cli-service build --target wc --dest wc --inline-vue  --name fdft-component src/main.js``

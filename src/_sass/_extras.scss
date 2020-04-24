@@ -1,0 +1,22 @@
+/*cards*/
+#workout-cards .card {
+border-color: #555;
+}
+
+#workout-cards .card-body {
+position: relative;
+}
+
+.access-tag {
+display: inline-block;
+position: absolute;
+top: 0;
+right: 0;
+background: #111;
+color: #fff;
+padding: 2px 8px;
+}
+
+.access-tag.bg-darkgreen {
+background-color: #006400;
+}

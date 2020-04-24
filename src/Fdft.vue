@@ -1,5 +1,5 @@
 <template>
-  <div id="workout-selector" class="container container-xl">
+  <div class="container container-xl mt-3">
     <checkbox-filters
       id="checkbox-filters-wrapper"
       class="container-xl px-0 d-none d-md-block"
@@ -49,13 +49,3 @@ export default {
   }
 };
 </script>
-
-<style>
-#workout-selector {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 10px;
-}
-</style>
